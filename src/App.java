@@ -14,6 +14,7 @@ public class App {
     static int etisalatNo = 0;
     static int mtelNo = 0;
     static int invalidNo = 0;
+    
     //Arrays consisting of the prefixes associated with the different service providers
     static final String[] mtnArray1 = new String[]{"07025","07026"};
     static final String[] mtnArray = new String[]{"0703","0706","0803","0806","0810","0813","0814","0816","0903","0906","0913","0916","0704"};
@@ -21,6 +22,8 @@ public class App {
     static final String[] gloArray = new String[]{"0705","0805","0807","0811","0815","0905","0915"};
     static final String[] etisalatArray = new String[]{"0809","0817","0818","0909","0908"};
     static final String[] mtelArray = new String[]{"0804"};
+
+    //Arrays have been converted to Lists so that we can use the contains() function
     static List<String> mtnList = new ArrayList<>(Arrays.asList(mtnArray));
     static List<String> mtnList1 = new ArrayList<>(Arrays.asList(mtnArray1));
     static List<String> airtelList = new ArrayList<>(Arrays.asList(airtelArray));
