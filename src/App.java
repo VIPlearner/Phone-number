@@ -37,13 +37,12 @@ public class App {
             String host = "https://grnhse-ghr-prod-s101.s3.eu-central-1.amazonaws.com/generic_attachments/attachments/402/213/810/original/PhoneNumbers.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVQGOLGY3RZPEZZOZ%2F20220429%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20220429T161547Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=031f69832d5d84214cb67350c27ad31fdd9986308e04684d27d0603c7753de34";
             URL url = new URL(host.trim());
             BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
-        
-            String line;
-            //int no = 0;
 
             System.out.println("Generating Summary Report.......");
             // Reading the file line by line and checking the first 4 or 5 digits of each line to
             // determine the service provider.
+            String line;
+            //int no = 0;
             while ((line = br.readLine()) != null) {
                 if(mtelList.contains(line.substring(0,4))) mtelNo++;
                 else if(etisalatList.contains(line.substring(0,4))) etisalatNo++;
