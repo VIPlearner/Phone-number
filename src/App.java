@@ -41,7 +41,6 @@ public class App {
             String line;
             //int no = 0;
 
-            //Loop: Determines what service provider each phone number belongs to and increments the count.
             System.out.println("Generating Summary Report.......");
             // Reading the file line by line and checking the first 4 or 5 digits of each line to
             // determine the service provider.
